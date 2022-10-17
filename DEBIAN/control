@@ -1,0 +1,9 @@
+Package: rws
+Version: 0.0.28
+Architecture: all
+Maintainer: Bohdan Tsap <bohdan.tsap@tutanota.com>
+Homepage: https://github.com/bohdaq/rust-web-server
+Depends: bash
+Section: unknown
+Priority: optional
+Description: rust-web-server (rws) is a simple web-server written in Rust.  The rws server can serve static content inside the directory it is started.

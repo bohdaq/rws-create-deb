@@ -1,4 +1,7 @@
-# Debian .deb builder for Rust Web Server
+# Create Debian .deb package for Rust Web Server
+To build rws, put rws at rws-create-deb/usr/local/bin, update DEBIAN/control file, and execute:
+> dpkg-deb --build rws-create-deb
+> mv rws-create-deb.deb rws.deb
 
-- [builder for x86_64](https://github.com/bohdaq/rws-create-deb/tree/x86_64) (Ubuntu, Linux Mint, etc.)
-- [builder for arm_64](https://github.com/bohdaq/rws-create-deb/tree/arm_64) (Raspberry Pi, Ubuntu ARM, etc.)
+To install package execute:
+> sudo dpkg -i --force-overwrite rws.deb
